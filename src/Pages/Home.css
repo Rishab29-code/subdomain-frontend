@@ -1,0 +1,122 @@
+.Home {
+    text-align: center;
+  }
+   
+  .text-section {
+    padding: 20px;
+    background-color: #f8f9fa;
+  }
+  
+  .content-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .content-div,
+  .image-div {
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    flex-basis: calc(100% - 20px); /* On mobile, full width */
+  }
+  
+  .image-div p {
+    text-align: left;
+  }
+  
+  .button-div {
+    margin: 2rem auto;
+    flex-basis: 100%;
+  }
+  
+  .custom-btn {
+    background-color: #34B7F1;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 15px;
+    cursor: pointer;
+    width: 100px;
+  }
+  
+  .image-div img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .doc-upload{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.file-upload-label {
+    background-color: #34B7F1;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    
+  }
+  
+  .file-upload-label:hover {
+    background-color: #47B7F1;
+  }
+  
+  /* Responsive Styles */
+  @media (min-width: 768px) {
+    .content-div,
+    .image-div {
+      flex-basis: calc(50% - 20px); /* On tablets and larger screens, 50% width */
+    }
+
+    .doc-upload{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+  
+    .content-div {
+      flex-direction: row;
+    }
+  
+    .image-div {
+      order: 1; /* Move image section to the beginning on tablets and larger screens */
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .content-div,
+    .image-div {
+      flex-basis: calc(35% - 20px);
+    }
+
+    .doc-upload{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .content-div {
+        flex-direction: row;
+      }
+    
+      .image-div {
+        order: 1; /* Move image section to the beginning on tablets and larger screens */
+      }
+    
+  }
+  
+  .file-name{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+  }
